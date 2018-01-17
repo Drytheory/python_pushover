@@ -11,7 +11,7 @@ Ihr habt zwei Dateien, diese beiden Dateien müssen immer im selben Ordner liege
 
 Ihr wollt eine Pushnachricht versenden?
 
-```
+```python
 from push import send_push_message
 send_push_message("APP_KEY, "TITLE", "MESSAGE")
 ```
