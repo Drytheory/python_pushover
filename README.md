@@ -9,9 +9,11 @@ Einfach und schnell mit Python Pushnachrichten über den Service Pushover ans Sm
 
 Ihr habt zwei Dateien, diese beiden Dateien müssen immer im selben Ordner liegen.
 
-Ihr wollt eine Pushnachricht versenden?
+Ihr wollt eine Pushnachricht versenden? Erstellt eine datei <example.py> und importiert die Funktion aus der push.py-Datei.
 
 ```python
 from push import send_push_message
 send_push_message("APP_KEY, "TITLE", "MESSAGE")
 ```
+
+
