@@ -2,7 +2,7 @@ import requests
 
 
 #Hier den User Key eintragen
-user_token = 'unej1vrdhj91xvz6o4q88i3aair6bq'
+user_token = 'USER-KEY'
 
 
 
