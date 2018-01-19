@@ -7,13 +7,32 @@ Einfach und schnell mit Python Pushnachrichten über den Service Pushover ans Sm
 
 # Wie funktioniert es?
 
-Ihr habt zwei Dateien, diese beiden Dateien müssen immer im selben Ordner liegen.
+Ihr habt die Datei push.py, in dieser werden alle Variablen die übergeben werden definiert.
+Ich könnt euch alle möglichen Variablen zur Übermittlung auf https://pushover.net/api sehen.
+Passt die Datei erstmal so an, wie ihr sie haben möchtet.
 
-Ihr wollt eine Pushnachricht versenden? Erstellt eine datei <example.py> und importiert die Funktion aus der push.py-Datei.
+Um einfach sofort Pushnachrichten zu senden, fügt einfach euren User-Key in die Datei ein.
+
+```python
+#Hier den User Key eintragen
+user_token = 'User-Key'
+```
+
+Wenn ihr jetzt ein Projekt habt, in dem ihr Pushnachrichten verwenden wollt. Schiebt erstmal die datei <push.py> in den Ordner eures Projekts.
+
+Anschließend müsst ihr in der Datei, in der Nachrichten versendet werden sollen, die Funktion importieren.
 
 ```python
 from push import send_push_message
-send_push_message("APP_KEY, "TITLE", "MESSAGE")
 ```
+
+Jetzt nur noch an der geschwünschten Stelle die Funktion aufrufen!
+
+```python
+send_push_message("APP_KEY", "TITLE", "MESSAGE")
+```
+
+
+Viel Spaß damit!
 
 
